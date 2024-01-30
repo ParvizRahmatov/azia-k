@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продажа авиабилетов онлайн</title>
+</head>
+<body>
+
+        <h1>Добро пожаловать!</h1>
+        <div class="flex">
+          <a  class="menu_item" href="https://wa.me/+992929000911">Контакты</a>
+          <a  class="menu_item" href="https://wa.me/+992929000911">О нас</a>
+          <a  class="menu_item" href="https://wa.me/+992929000911">Продукты</a>
+        </div>
+
+        <br>
+  <!-- Блок с изображениями в центре -->
+  <div id="imageContainer">
+    <img src="1.webp" alt="Фото 1">
+    <img src="3.jpg" alt="Фото 2">
+    <img src="4.jpg" alt="Фото 3">
+  </div>
+
+  <!-- Форма для покупки авиабилета -->
+  <div id="ticketForm">
+    <h2>Покупка авиабилета</h2>
+
+    <label for="from">Откуда:</label>
+    <input type="text" id="from" name="from" required>
+
+    <label for="to">Куда:</label>
+    <input type="text" id="to" name="to" required>
+    
+    <label for="date">Дата отправки:</label>
+    <input type="date" id="date" name="date" required>
+
+    <button onclick="searchFlights()">Найти билет</button>
+  </div>
+ 
+  </div>
+  </div>
+  
+  <style>
+    #rounded-image {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 40%; 
+  object-fit: cover; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  height: 150vh;
+  background: linear-gradient( rgb(228, 234, 236), rgb(144, 189, 198));
+}
+
+h1 {
+  color: #fff;
+}
+
+#imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu_item {
+  background: linear-gradient(#a09545,rgb(31, 159, 194));
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 30px;
+}
+.flex {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  list-style-type: none;
+  list-style-image: none;
+  margin-right: 15px;
+}
+
+#imageContainer img {
+  width: 400px; 
+  height: 380px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+}
+
+#ticketForm {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 250px; /* Максимальная ширина формы */
+  width: 100%;
+}
+
+input {
+  width: calc(100% - 15px); /* Уменьшаем ширину ячеек */
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #a09545;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 2s;
+  background: linear-gradient(45deg,#b88756,red);
+
+}
+
+button:hover {
+  background-color: linear-gradient(#534a41,red);
+}
+h1{
+  color:black
+}
+  </style>
+
+  <script>
+    function searchFlights() {
+      alert('Поиск билетов для маршрута: ' + document.getElementById('from').value +
+            ' - ' + document.getElementById('to').value +
+            ', время: ' + document.getElementById('time').value);
+    }
+  </script>
+  <script>
+    function searchFlights() {
+        window.open('https://www.Azia-K.com', '');
+    }
+    </script>
+  <footer>
+     <p>&copy; 2023 Авиабилеты Онлайн</p>
+    </footer>
+</body>
+</html>
